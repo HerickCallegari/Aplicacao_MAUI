@@ -1,0 +1,265 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoMAUI.SobrePage">
+    <ScrollView HorizontalOptions="Fill">
+        <VerticalStackLayout
+            Padding="10,0"
+            Spacing="25">
+
+            <Label 
+                Text="Sobre o Aplicativo" 
+                FontSize="40"
+                HorizontalOptions="Center"
+                FontFamily="Arial Bold"
+                SemanticProperties.HeadingLevel="Level1"/>
+            <Label HorizontalOptions="Center" Text="Aplicativo desenvolvido em C# com o FrameWork MAUI." />
+            <Label Text="Objetivo: Aprendizado e demonstracao de desenvolvimento com a ferramenta MAUI para Mobile." />
+            <Label 
+                Text="Desenvolvedores:" 
+                FontSize="30"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"/>
+
+            <!-- Herick -->
+            <Frame BorderColor="Black"
+                   CornerRadius="0"
+                   Padding="1">
+                <Grid HorizontalOptions="Fill"
+                   Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <!-- A primeira coluna ocupa o tamanho da imagem -->
+                        <ColumnDefinition Width="Auto"/>
+                        <!-- A segunda coluna ocupa o restante do espa o -->
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Frame BorderColor="Black"
+                       CornerRadius="0"
+                       Padding="1">
+                        <Image Grid.Column="0"
+                     Source="Resources/Images/albertoeistano.png"
+                     HeightRequest="185"
+                     Aspect="AspectFit"
+                     SemanticProperties.Description="Alberto" />
+                    </Frame>
+                    <ContentView Grid.Column="1" Padding="5,0,0,0">
+                        <VerticalStackLayout>
+
+                            <!-- Nome -->
+                            <Label FontSize="16">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Nome: " FontAttributes="Bold" />
+                                        <Span Text="Alberto Parana" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+
+                            <!-- Funcao -->
+                            <Label FontSize="16">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Funcao: " FontAttributes="Bold" />
+                                        <Span Text="Nerdao" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <!-- Descricao -->
+                            <Label FontSize="14">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Descricao: " FontAttributes="Bold" />
+                                        <Span Text="Joga lol ate 3 horas da manha." />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <!-- Contato -->
+                            <Label Text="Contato:" FontAttributes="Bold" FontSize="14"/>
+
+                            <!-- Telefone -->
+                            <Label FontSize="12">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Telefone: " FontAttributes="Bold" />
+                                        <Span Text="45 991367709" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label FontSize="10">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Email: " FontAttributes="Bold" />
+                                        <Span Text="Zenoplayer155@gmail.com" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </VerticalStackLayout>
+                    </ContentView>
+                </Grid>
+            </Frame>
+            <!-- Matheus -->
+            <Frame BorderColor="Black"
+                   CornerRadius="0"
+                   Padding="1">
+                <Grid HorizontalOptions="Fill"
+                      Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <!-- A primeira coluna ocupa o tamanho da imagem -->
+                        <ColumnDefinition Width="Auto"/>
+                        <!-- A segunda coluna ocupa o restante do espa o -->
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Frame BorderColor="Black"
+                           CornerRadius="0"
+                           Padding="1"> 
+                        <Image  Grid.Column="0"
+                                Source="Resources/Images/matheus.png"
+                                HeightRequest="185"
+                                Aspect="AspectFit"
+                                SemanticProperties.Description="baby" />
+                    </Frame>
+                    <ContentView Grid.Column="1" Padding="5,0,0,0">
+                        <VerticalStackLayout>
+
+                            <!-- Nome -->
+                            <Label FontSize="16">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Nome: " FontAttributes="Bold" />
+                                        <Span Text="Killer Baby" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+
+                            <!-- Funcao -->
+                            <Label FontSize="16">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Funcao: " FontAttributes="Bold" />
+                                        <Span Text="Cobrador" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <!-- Descricao -->
+                            <Label FontSize="14">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Descricao: " FontAttributes="Bold" />
+                                        <Span Text="Cobrar quem ta devendo passar quem continua." />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <!-- Contato -->
+                            <Label Text="Contato:" FontAttributes="Bold" FontSize="14"/>
+
+                            <!-- Telefone -->
+                            <Label FontSize="12">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Telefone: " FontAttributes="Bold" />
+                                        <Span Text="18 99742-3085" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label FontSize="10">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Email: " FontAttributes="Bold" />
+                                        <Span Text="killbaby@gmail.com" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </VerticalStackLayout>
+                    </ContentView>
+                </Grid>
+            </Frame>
+
+            <!-- Kiria -->
+            <Frame BorderColor="Black"
+       CornerRadius="0"
+       Padding="1">
+                <Grid HorizontalOptions="Fill"
+          Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <!-- A primeira coluna ocupa o tamanho da imagem -->
+                        <ColumnDefinition Width="Auto"/>
+                        <!-- A segunda coluna ocupa o restante do espa o -->
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Frame BorderColor="Black"
+               CornerRadius="0"
+               Padding="1">
+                        <Image  Grid.Column="0"
+                    Source="Resources/Images/kiriaa.png"
+                    HeightRequest="185"
+                    Aspect="AspectFit"
+                    SemanticProperties.Description="Robos" />
+                    </Frame>
+                    <ContentView Grid.Column="1" Padding="5,0,0,0">
+                        <VerticalStackLayout>
+
+                            <!-- Nome -->
+                            <Label FontSize="16">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Nome: " FontAttributes="Bold" />
+                                        <Span Text="ChinXin Ping" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+
+                            <!-- Funcao -->
+                            <Label FontSize="16">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Funcao: " FontAttributes="Bold" />
+                                        <Span Text="Endoidamento" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <!-- Descricao -->
+                            <Label FontSize="14">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Descricao: " FontAttributes="Bold" />
+                                        <Span Text="Planejar softwares." />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <!-- Contato -->
+                            <Label Text="Contato:" FontAttributes="Bold" FontSize="14"/>
+
+                            <!-- Telefone -->
+                            <Label FontSize="12">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Telefone: " FontAttributes="Bold" />
+                                        <Span Text="69 8116-7964" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label FontSize="10">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Email: " FontAttributes="Bold" />
+                                        <Span Text="pinling@outlook.com" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </VerticalStackLayout>
+                    </ContentView>
+                </Grid>
+            </Frame>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

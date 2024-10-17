@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoMAUI.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <ContentView Grid.Row="0">
+            <VerticalStackLayout
+                Padding="30,0"
+                Spacing="25">
+                <Image
+                    Source="Resources/Images/robos.png"
+                    HeightRequest="185"
+                    Aspect="AspectFit"
+                    SemanticProperties.Description="Robos" />
+
+
+                <Label
+                Text="Contador"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+                <Label
+                Text="Aperte do botao para aumentar a contagem"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Aperte do botao para aumentar a contagem" />
+
+                <Button
+                x:Name="CounterBtn"
+                Text="Aperte aqui" 
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+                <Button
+                x:Name="ResetBtn"
+                Text="Zerar Contador"
+                BackgroundColor="Red"
+                
+                Clicked="OnResetBtnClicked"
+                HorizontalOptions="Center" />
+
+            </VerticalStackLayout>
+        </ContentView >
+        <Button 
+            Grid.Row="1"
+            x:Name="SobreBtn"
+            Text="Sobre"
+            BackgroundColor="Green"
+            
+            
+            Clicked="OnSobreBtnClicked"
+            HorizontalOptions ="End"
+            VerticalOptions ="End"
+            Padding="10"
+            Margin="3"
+            />
+    </Grid>
+</ContentPage>
